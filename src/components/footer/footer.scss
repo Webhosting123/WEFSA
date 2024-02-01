@@ -1,0 +1,107 @@
+@import "../../main.scss";
+.footer-full {
+  padding: 25px;
+  background-color: #32cd32;
+
+  .address {
+    .icon-add {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .gif {
+        font-size: 50px;
+        color: red;
+      }
+      .cnts {
+        .title {
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          color: #fff;
+        }
+        .cnt {
+          font-family: Montserrat;
+          font-size: 15px;
+          font-weight: 400;
+          margin-bottom: 5px;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .ways {
+    .phone {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .image {
+        font-size: 43px;
+        color: red;
+      }
+    }
+    .cont {
+      .title {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      .one,
+      .two {
+        font-family: Montserrat;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        color: #fff;
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .mail {
+    .mail-cnt {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .image {
+      font-size: 45px;
+      color: red;
+    }
+    .cnt {
+      .title {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      .to,
+      .to-to {
+        margin-bottom: 10px;
+        a {
+          font-family: Montserrat;
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    .fb,
+    .insta,
+    .linkedin,
+    .google,
+    .twitter {
+      font-size: 30px;
+    }
+  }
+}

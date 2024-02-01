@@ -1,0 +1,31 @@
+@import "../../main.scss";
+.about-us-full {
+  .about-image {
+    padding: 25px;
+    img {
+      width: 100%;
+      overflow: hidden;
+      object-fit: contain;
+    }
+  }
+  .about-cnt {
+    .title {
+      h1 {
+        font-size: 25px;
+        font-family: Montserrat;
+        font-weight: 500;
+        color: #000;
+      }
+    }
+    .cnt {
+      h4 {
+        font-size: 18px;
+        letter-spacing: 1px;
+        word-spacing: 5px;
+        font-family: Montserrat;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+  }
+}

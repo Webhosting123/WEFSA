@@ -1,0 +1,132 @@
+@import "../../main.scss";
+
+.logo-wefsa {
+  margin: auto;
+  .logo {
+    display: flex;
+    gap: 5px;
+    padding: 0px 20px;
+    background: white;
+    font-family: Alfa Slab One;
+    font-size: 100px;
+    justify-content: center;
+    .circle {
+      color: white;
+      font-size: 3rem;
+    }
+
+    //water
+
+    .water {
+      color: white;
+      color: transparent;
+      background: url("./Images/water.jpg");
+      background-clip: text;
+      -webkit-background-clip: text;
+      text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
+      background-size: 200% auto;
+      animation: water 30s alternate infinite;
+    }
+
+    @keyframes water {
+      from {
+        background-position: 0% 80%;
+      }
+      to {
+        background-position: 100% 50%;
+      }
+    }
+
+    // earth
+    .earth {
+      color: transparent;
+      background-clip: text;
+      background: url("./Images/earth.jpg");
+      -webkit-background-clip: text;
+      background-size: 200% auto;
+      animation: earth 30s alternate infinite;
+      text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes earth {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+
+    // fire
+
+    .fire {
+      color: transparent;
+      background: url("./Images/fire1.jpg") repeat;
+      -webkit-background-clip: text;
+      background-position: center;
+      background-clip: text;
+      background-size: 200% auto;
+      text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
+      animation: fire 30s alternate infinite;
+    }
+
+    @keyframes fire {
+      from {
+        background-position: 0% 80%;
+      }
+      to {
+        background-position: 100% 50%;
+      }
+    }
+    // sky
+    .sky {
+      color: transparent;
+      background: url("./Images/sky.jpg") repeat;
+      -webkit-background-clip: text;
+      background-position: center;
+      background-clip: text;
+      background-size: 200% auto;
+      text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
+      animation: sky 30s alternate infinite;
+    }
+
+    @keyframes sky {
+      from {
+        background-position: 0% 80%;
+      }
+      to {
+        background-position: 100% 50%;
+      }
+    }
+    //air
+
+    .air {
+      color: transparent;
+      background: url("./Images/air.jpg") repeat;
+      text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
+      -webkit-background-clip: text;
+      background-position: center;
+      background-clip: text;
+      background-size: 200% auto;
+      animation: air 30s alternate infinite;
+    }
+
+    @keyframes air {
+      from {
+        background-position: 0% 80%;
+      }
+      to {
+        background-position: 100% 50%;
+      }
+    }
+  }
+  .abbreviation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 3%;
+    font-size: 0.5rem;
+    font-family: cursive;
+  }
+}

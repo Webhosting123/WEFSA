@@ -1,0 +1,143 @@
+@import "../../main.scss";
+.contact-form-modal {
+  .drop-image {
+    background-image: url("./image/top-view-retro-telephone.jpg");
+    background-position: center;
+    background-size: 100%;
+
+    .form-modal {
+      .title-main {
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+      }
+      .form-form {
+        .name {
+          margin-bottom: 15px;
+          margin-top: 15px;
+          .title {
+            font-family: Montserrat;
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #fff;
+          }
+          input {
+            outline: none;
+            font-family: Montserrat;
+            height: 40px;
+            width: 50%;
+          }
+        }
+      }
+      .emil {
+        margin-bottom: 15px;
+        .title {
+          font-family: Montserrat;
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 5px;
+          color: #fff;
+        }
+        input {
+          outline: none;
+          font-family: Montserrat;
+          height: 40px;
+          width: 50%;
+        }
+      }
+      .number {
+        margin-bottom: 15px;
+        .title {
+          font-family: Montserrat;
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 5px;
+          color: #fff;
+        }
+        input {
+          outline: none;
+          font-family: Montserrat;
+          height: 40px;
+          width: 50%;
+        }
+      }
+      .training {
+        .title {
+          font-family: Montserrat;
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 10px;
+          color: #fff;
+        }
+        .types {
+          margin-bottom: 15px;
+          .type-ome,
+          .type-two,
+          .type-three {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 5px;
+            color: #fff;
+            label {
+              font-family: Montserrat;
+              font-size: 15px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+      .message {
+        .title {
+          font-family: Montserrat;
+          font-size: 17px;
+          font-weight: 500;
+          margin-bottom: 10px;
+          color: #fff;
+        }
+        textarea {
+          font-family: Montserrat;
+          outline: none !important;
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+      .form-btn-sbt {
+        .sbt-btn {
+          font-size: 18px;
+          font-family: Montserrat;
+          font-weight: 500;
+          margin-top: 20px;
+          text-align: center;
+          width: 9em;
+          height: 3em;
+          font-size: 15px;
+          border: none;
+          position: relative;
+          overflow: hidden;
+          z-index: 1;
+        }
+
+        .sbt-btn::before {
+          content: "";
+          width: 0;
+          height: 3em;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-image: linear-gradient(to right, #0fd850 0%, #999433 100%);
+          transition: 0.5s ease;
+          display: block;
+          z-index: -1;
+        }
+
+        .sbt-btn:hover::before {
+          width: 9em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+@import "../../main.scss";
+.farm-header {
+  padding: 0px;
+  .logo-header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .me-auto {
+    gap: 30px;
+    margin-left: auto !important;
+    margin-right: unset !important;
+    .home,
+    .about,
+    .moto,
+    .gallery,
+    .contact,
+    .training {
+      font-size: 18px;
+      font-family: Montserrat;
+      font-weight: 500;
+      color: #000;
+      background: transparent;
+      border: none;
+      color: #000;
+      position: relative;
+      transition: 0.5s ease;
+      cursor: pointer;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background-color: #32cd32;
+        transition: 0.5s ease;
+      }
+
+      &:hover {
+        color: #fff;
+        transition-delay: 0.5s;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        background-color: #32cd32;
+        transition: 0.4s ease;
+        z-index: -1;
+      }
+
+      &:hover::after {
+        height: 100%;
+        transition-delay: 0.4s;
+        color: aliceblue;
+      }
+    }
+    .traning-one,
+    .traning-two,
+    .traning-three {
+      font-size: 15px;
+      font-family: Montserrat;
+      font-weight: 400;
+    }
+  }
+}
