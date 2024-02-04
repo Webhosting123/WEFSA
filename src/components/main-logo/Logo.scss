@@ -6,7 +6,6 @@
     display: flex;
     gap: 5px;
     padding: 0px 20px;
-    background: white;
     font-family: Alfa Slab One;
     font-size: 100px;
     justify-content: center;
@@ -25,59 +24,33 @@
       -webkit-background-clip: text;
       text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
       background-size: 200% auto;
-      animation: water 30s alternate infinite;
-    }
-
-    @keyframes water {
-      from {
-        background-position: 0% 80%;
-      }
-      to {
-        background-position: 100% 50%;
-      }
+      animation: animate 30s alternate infinite;
     }
 
     // earth
     .earth {
       color: transparent;
       background-clip: text;
-      background: url("./Images/earth.jpg");
+      background: url("./Images/earth3.jpg");
       -webkit-background-clip: text;
       background-size: 200% auto;
-      animation: earth 30s alternate infinite;
+      animation: animate 30s alternate infinite;
       text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    @keyframes earth {
-      0% {
-        background-position: 0% 0%;
-      }
-      100% {
-        background-position: 100% 100%;
-      }
     }
 
     // fire
 
     .fire {
       color: transparent;
-      background: url("./Images/fire1.jpg") repeat;
+      background: url("./Images/fire.jpg") repeat;
       -webkit-background-clip: text;
       background-position: center;
       background-clip: text;
       background-size: 200% auto;
       text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
-      animation: fire 30s alternate infinite;
+      animation: animate 30s alternate infinite;
     }
 
-    @keyframes fire {
-      from {
-        background-position: 0% 80%;
-      }
-      to {
-        background-position: 100% 50%;
-      }
-    }
     // sky
     .sky {
       color: transparent;
@@ -87,17 +60,9 @@
       background-clip: text;
       background-size: 200% auto;
       text-shadow: -10px -3px 10px rgba(0, 0, 0, 0.2);
-      animation: sky 30s alternate infinite;
+      animation: animate 30s alternate infinite;
     }
 
-    @keyframes sky {
-      from {
-        background-position: 0% 80%;
-      }
-      to {
-        background-position: 100% 50%;
-      }
-    }
     //air
 
     .air {
@@ -108,15 +73,14 @@
       background-position: center;
       background-clip: text;
       background-size: 200% auto;
-      animation: air 30s alternate infinite;
+      animation: animate 30s alternate infinite;
     }
-
-    @keyframes air {
-      from {
+    @keyframes animate {
+      0% {
         background-position: 0% 80%;
       }
-      to {
-        background-position: 100% 50%;
+      100% {
+        background-position: 100% 100%;
       }
     }
   }

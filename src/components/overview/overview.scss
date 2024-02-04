@@ -1,188 +1,106 @@
 @import "../../main.scss";
+
 .overview-full {
   padding: 25px;
+
   .title {
     h1 {
-      font-size: 25px;
-      font-family: Montserrat;
-      font-weight: 500;
-      color: #000;
+      font-size: 36px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: #333;
+      @include themed() {
+        color: t("whitecolor");
+      }
       text-align: center;
+      margin-bottom: 20px;
     }
   }
+
   .overview-cnt {
-    .vision {
-      margin-bottom: 10px;
-      .title {
-        font-size: 20px;
-        font-family: Montserrat;
-        font-weight: 500;
-        color: #000;
-        margin-bottom: 5px;
-      }
-      .cnt {
-        font-size: 18px;
-        letter-spacing: 1px;
-        word-spacing: 5px;
-        font-family: Montserrat;
-        font-weight: 400;
-        color: #000;
-      }
-    }
+    .vision,
     .mission {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
+
       .title {
-        font-size: 20px;
-        font-family: Montserrat;
-        font-weight: 500;
-        color: #000;
-        margin-bottom: 5px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #333;
+        @include themed() {
+          color: t("whitecolor");
+        }
+        margin-bottom: 15px;
       }
+
       .cnt {
         font-size: 18px;
-        letter-spacing: 1px;
-        word-spacing: 5px;
-        font-family: Montserrat;
+        line-height: 1.6;
+        font-family: "Montserrat", sans-serif;
         font-weight: 400;
-        color: #000;
+        color: #555;
+        @include themed() {
+          color: t("whitecolor");
+        }
       }
     }
   }
-  .overview-image {
+
+  .overview-image,
+  .holistic,
+  .Empowering,
+  .focus,
+  .Objectives {
     margin-top: 50px;
+
     .image-one {
       img {
         width: 100%;
-      }
-    }
-  }
+        border-radius: 15px;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 
-  .holistic {
-    margin-bottom: 10px;
-    margin-top: 50px;
-    .title {
-      font-size: 20px;
-      font-family: Montserrat;
-      font-weight: 500;
-      color: #000;
-      margin-bottom: 5px;
-    }
-    .cnt {
-      .sub-cnt {
-        font-size: 18px;
-        letter-spacing: 1px;
-        word-spacing: 5px;
-        font-family: Montserrat;
-        font-weight: 400;
-        color: #000;
-        margin-bottom: 5px;
-      }
-      ul {
-        li {
-          font-size: 16px;
-          letter-spacing: 0.5px;
-          word-spacing: 3px;
-          font-family: Montserrat;
-          font-weight: 400;
-          color: #000;
-          margin-bottom: 5px;
+        &:hover {
+          transform: scale(1.05);
         }
       }
     }
-  }
 
-  .Empowering {
-    margin-bottom: 10px;
-    margin-top: 50px;
     .title {
-      font-size: 20px;
-      font-family: Montserrat;
-      font-weight: 500;
-      color: #000;
-      margin-bottom: 5px;
-    }
-    .cnt {
-      font-size: 18px;
-      letter-spacing: 1px;
-      word-spacing: 5px;
-      font-family: Montserrat;
-      font-weight: 400;
-      color: #000;
-      margin-bottom: 5px;
-
-      ul {
-        li {
-          font-size: 16px;
-          letter-spacing: 0.5px;
-          word-spacing: 3px;
-          font-family: Montserrat;
-          font-weight: 400;
-          color: #000;
-          margin-bottom: 5px;
-        }
+      font-size: 28px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      color: #333;
+      @include themed() {
+        color: t("whitecolor");
       }
+      margin-bottom: 20px;
     }
-  }
-  .focus {
-    margin-bottom: 10px;
-    .title {
-      font-size: 20px;
-      font-family: Montserrat;
-      font-weight: 500;
-      color: #000;
-      margin-bottom: 5px;
-    }
+
     .cnt {
       font-size: 18px;
-      letter-spacing: 1px;
-      word-spacing: 5px;
-      font-family: Montserrat;
+      line-height: 1.6;
+      font-family: "Montserrat", sans-serif;
       font-weight: 400;
-      color: #000;
-      margin-bottom: 5px;
-
-      ul {
-        li {
-          font-size: 16px;
-          letter-spacing: 0.5px;
-          word-spacing: 3px;
-          font-family: Montserrat;
-          font-weight: 400;
-          color: #000;
-          margin-bottom: 5px;
-        }
+      color: #555;
+      @include themed() {
+        color: t("whitecolor");
       }
-    }
-  }
-
-  .Objectives {
-    margin-bottom: 10px;
-    margin-top: 25px;
-    .title {
-      font-size: 20px;
-      font-family: Montserrat;
-      font-weight: 500;
-      color: #000;
-      margin-bottom: 5px;
-    }
-    .cnt {
-      font-size: 18px;
-      letter-spacing: 1px;
-      word-spacing: 5px;
-      font-family: Montserrat;
-      font-weight: 400;
-      color: #000;
-      margin-bottom: 5px;
+      margin-bottom: 20px;
 
       ul {
+        padding-left: 20px;
+
         li {
           font-size: 16px;
-          letter-spacing: 0.5px;
-          word-spacing: 3px;
-          font-family: Montserrat;
+          line-height: 1.4;
+          font-family: "Montserrat", sans-serif;
           font-weight: 400;
-          color: #000;
-          margin-bottom: 5px;
+          color: #555;
+          @include themed() {
+            color: t("whitecolor");
+          }
+          margin-bottom: 10px;
+          position: relative;
         }
       }
     }

@@ -17,13 +17,29 @@ import "./slider.scss";
 // import paddyImage from "./image/wheat-field-yellow.jpg";
 import tractorImage from "./image/farm-worker-driving-tractor-spraying-green-meadow-generated-by-ai.jpg";
 import Form from "../modal/modal";
+import { useEffect, useState } from "react";
 
 export default function Wefsa() {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 500, // Set the duration of the animation
-  //   });
-  // }, []);
+  const [show, setShow] = useState(false);
+  const [displayedText, setDisplayedText] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const text = "Empowering Agriculture, Enriching Lives.";
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (currentIndex < text.length) {
+        setDisplayedText((prevText) => prevText + text[currentIndex]);
+        setCurrentIndex((prevIndex) => prevIndex + 1);
+      } else {
+        clearInterval(intervalId);
+      }
+    }, 100);
+
+    return () => clearInterval(intervalId);
+  }, [currentIndex, text]);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -41,6 +57,7 @@ export default function Wefsa() {
         // navigation={true}
         // modules={[Autoplay, Pagination, Navigation]}
         className="wefsa-Swiper"
+        id="home"
       >
         {/* <SwiperSlide>
           <div className="swiper-image-one">
@@ -53,16 +70,17 @@ export default function Wefsa() {
             <img src={tractorImage} alt="tractorImage" title="main-image-two" />
             <div className="title">
               <h1>Welcome to WEFSA</h1>
-              <h4>Empowering Agriculture, Enriching Lives.</h4>
+              <h4>{displayedText}</h4>
               <div className="enquiries-button">
-                <button className="button-87">
-                  <Form />
+                <button className="button-87" onClick={handleShow}>
+                  For Enquiry
                 </button>
               </div>
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
+      <Form show={show} handleClose={handleClose} />
     </>
   );
 }

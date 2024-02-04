@@ -15,7 +15,7 @@ export default function AboutUs() {
   }, []);
   return (
     <section>
-      <div className="about-us-full">
+      <div className="about-us-full" id="about">
         <Container>
           <Row className="align-items-center">
             <Col md={6}>

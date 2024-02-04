@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.45cde115.css",
+    "main.js": "/static/js/main.d278e274.js",
+    "static/js/592.2aace669.chunk.js": "/static/js/592.2aace669.chunk.js",
+    "static/media/leader.jpg": "/static/media/leader.c13bcdbd3fcb3dad8d13.jpg",
+    "static/media/kian-hao-ng-44s10tNvXK4-unsplash.jpg": "/static/media/kian-hao-ng-44s10tNvXK4-unsplash.ddc918aed446469d195a.jpg",
+    "static/media/organic.jpg": "/static/media/organic.0e8e7b4a118e23046707.jpg",
+    "static/media/krishna-k-maiti-PbIFcYpB230-unsplash.jpg": "/static/media/krishna-k-maiti-PbIFcYpB230-unsplash.fc01d5876390a4ae2cdc.jpg",
+    "static/media/fodder.jpg": "/static/media/fodder.6f52b604b33edc0cde16.jpg",
+    "static/media/overview.jpg": "/static/media/overview.01c99469b37294718619.jpg",
+    "static/media/jason-dent-mbv-fyxkRP8-unsplash.jpg": "/static/media/jason-dent-mbv-fyxkRP8-unsplash.24f01a4fcaf3395d8a29.jpg",
+    "static/media/program.jpg": "/static/media/program.74520f9ebc18cd184948.jpg",
+    "static/media/sandy-zebua-a7n65pmnJ4Q-unsplash.jpg": "/static/media/sandy-zebua-a7n65pmnJ4Q-unsplash.992e59a278fa0e37c907.jpg",
+    "static/media/krishna-kant-02P9SveWru4-unsplash.jpg": "/static/media/krishna-kant-02P9SveWru4-unsplash.3a45441a2752da906b9c.jpg",
+    "static/media/training.jpg": "/static/media/training.b154606949ce4b71476e.jpg",
+    "static/media/paddy.jpg": "/static/media/paddy.01f4a69b9fab65bd2e6a.jpg",
+    "static/media/close-up-portrait-cute-cow-grazing-meadow-generated-by-artificial-intelligence.jpg": "/static/media/close-up-portrait-cute-cow-grazing-meadow-generated-by-artificial-intelligence.62b7d00b738982be3c1e.jpg",
+    "static/media/farm-worker-driving-tractor-spraying-green-meadow-generated-by-ai.jpg": "/static/media/farm-worker-driving-tractor-spraying-green-meadow-generated-by-ai.e25044a9f6f2d67ba9d9.jpg",
+    "static/media/top-view-retro-telephone.jpg": "/static/media/top-view-retro-telephone.780be7d5bad07a602224.jpg",
+    "static/media/supply.jpg": "/static/media/supply.48cfe2726d3eb1eaed5f.jpg",
+    "static/media/vision.jpg": "/static/media/vision.e61a7b860a3c971dd53f.jpg",
+    "static/media/sky.jpg": "/static/media/sky.eb3ea73eabf616430c74.jpg",
+    "static/media/fire.jpg": "/static/media/fire.4f2d587c074db57db211.jpg",
+    "static/media/earth3.jpg": "/static/media/earth3.08b2457e56137615e9a2.jpg",
+    "static/media/water.jpg": "/static/media/water.91a727df015b07b05e82.jpg",
+    "static/media/air.jpg": "/static/media/air.2dd758c61cb203445cc4.jpg",
+    "index.html": "/index.html",
+    "static/media/price-tick.svg": "/static/media/price-tick.ebb4f6b5c418a8e2199454aa0f1e1d2b.svg",
+    "static/media/pop.svg": "/static/media/pop.460ec8bcc9b66f8376496d90d2f41a9c.svg",
+    "static/media/curve.svg": "/static/media/curve.7dda602cab3ea63dab66.svg",
+    "main.45cde115.css.map": "/static/css/main.45cde115.css.map",
+    "main.d278e274.js.map": "/static/js/main.d278e274.js.map",
+    "592.2aace669.chunk.js.map": "/static/js/592.2aace669.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45cde115.css",
+    "static/js/main.d278e274.js"
+  ]
+}

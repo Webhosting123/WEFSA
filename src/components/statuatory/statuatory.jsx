@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 export default function Statuatory() {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Set the duration of the animation
+      duration: 2000,
     });
   }, []);
   return (

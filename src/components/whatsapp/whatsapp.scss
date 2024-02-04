@@ -1,0 +1,71 @@
+.whatup {
+  width: 0;
+  position: fixed;
+  z-index: 9;
+  top: 40%;
+
+  ul {
+    list-style: none;
+    background: #2eb410;
+    padding: 10px;
+    width: 330px;
+    border-radius: 20px;
+    text-align: right;
+    transform: translate(-275px, 0);
+    transition: all 1s;
+    li {
+      a {
+        color: white;
+        .whats-icon {
+          margin-left: 20px;
+          color: green;
+          background: white;
+          width: 25px;
+          padding: 0px 5px 5px 7px;
+          height: 25px;
+          border-radius: 50%;
+          span {
+            align-items: center;
+            -webkit-animation: pulse-red 2s infinite;
+            animation: pulse-red 2s infinite;
+            background-color: #eb0729;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.29);
+            color: #ea0a0c;
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            font-weight: 500;
+            height: 10px;
+            justify-content: center;
+            position: absolute;
+            right: 12px;
+            top: 9px;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            width: 10px;
+            z-index: 999;
+          }
+          @keyframes pulse-red {
+            0% {
+              transform: scale(1);
+              box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+            }
+            70% {
+              transform: scale(1);
+              box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+            }
+            100% {
+              transform: scale(1);
+              box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+            }
+          }
+        }
+      }
+    }
+  }
+  ul:hover {
+    transform: translateX(-130px);
+  }
+}

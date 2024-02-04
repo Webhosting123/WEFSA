@@ -1,0 +1,89 @@
+@import "../../main.scss";
+.about-uss {
+  font-family: "Montserrat", sans-serif;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  .colomn {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .title {
+      h1 {
+        font-size: 36px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        color: #333;
+        @include themed() {
+          color: t("whitecolor");
+        }
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    }
+    .overall-content {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .line {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        color: #333;
+        @include themed() {
+          color: t("whitecolor");
+        }
+        .images {
+          width: 100%;
+          text-align: center;
+          img {
+            width: 300px;
+            height: 200px;
+            transition: 0.5s ease-in-out;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            &:hover {
+              transform: translateY(-30px);
+              transition: 0.5s ease-in-out;
+            }
+          }
+          &:hover > .read {
+            visibility: visible;
+            opacity: 1;
+            text-indent: 0px;
+            margin-right: 10px;
+          }
+        }
+        .read_more {
+          text-align: center;
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          .read {
+            position: relative;
+            margin-right: 0;
+            display: inline-block;
+            visibility: hidden;
+            opacity: 0;
+            font-weight: 600;
+            text-indent: -110px;
+            -webkit-transition: visibility 0.4s ease, margin-right 0.4s ease-out,
+              text-indent 0.5s ease-out, opacity 0.4s ease;
+            transition: visibility 0.4s ease, margin-right 0.4s ease-out,
+              text-indent 0.5s ease-out, opacity 0.4s ease;
+          }
+          &:hover .read {
+            visibility: visible;
+            opacity: 1;
+            text-indent: 0px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

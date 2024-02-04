@@ -1,107 +1,218 @@
 @import "../../main.scss";
-.footer-full {
-  padding: 25px;
-  background-color: #32cd32;
 
-  .address {
-    .icon-add {
+.footer-last {
+  padding: 50px 20px;
+  background-color: black;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  .add-section {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .address {
       display: flex;
-      align-items: center;
-      gap: 10px;
-      .gif {
-        font-size: 50px;
-        color: red;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 30px;
+      .topic {
+        font-weight: 600;
+        display: flex;
+        gap: 31px;
+        align-content: center;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
       }
-      .cnts {
-        .title {
-          font-family: Montserrat;
-          font-size: 18px;
-          font-weight: 700;
-          margin-bottom: 10px;
-          color: #fff;
+      .sub-topic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10%;
+        .loc {
+          svg {
+            font-size: 30px;
+          }
         }
-        .cnt {
-          font-family: Montserrat;
-          font-size: 15px;
-          font-weight: 400;
-          margin-bottom: 5px;
-          color: #fff;
+        .loc-address {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          gap: 5px;
         }
       }
     }
-  }
-  .ways {
+
     .phone {
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 10px;
-      .image {
-        font-size: 43px;
-        color: red;
+      gap: 10%;
+      .phone-icon {
+        font-size: 30px;
       }
-    }
-    .cont {
-      .title {
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        color: #fff;
-      }
-      .one,
-      .two {
-        font-family: Montserrat;
-        font-size: 15px;
-        font-weight: 400;
-        margin-bottom: 15px;
-        color: #fff;
-        a {
-          text-decoration: none;
-          color: #fff;
-        }
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 800;
       }
     }
   }
-  .mail {
-    .mail-cnt {
+  .web-section {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .touch {
+      .topic {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10%;
+      }
+    }
+    .sub-topic {
       display: flex;
-      gap: 10px;
-      align-items: center;
-    }
-    .image {
-      font-size: 45px;
-      color: red;
-    }
-    .cnt {
-      .title {
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        color: #fff;
-      }
-      .to,
-      .to-to {
-        margin-bottom: 10px;
-        a {
-          font-family: Montserrat;
-          color: #fff;
-          text-decoration: none;
+      flex-direction: column;
+      gap: 18px;
+      .web-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10%;
+        text-decoration: none;
+        color: white;
+        flex-wrap: wrap;
+        .icon {
+          font-size: 30px;
+          color: white;
         }
       }
     }
   }
-  .social {
+  .map-section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    iframe {
+      border-radius: 20px;
+    }
+  }
+  .copyright {
     display: flex;
     flex-direction: row;
+    align-content: center;
     justify-content: center;
-    gap: 15px;
-    .fb,
-    .insta,
-    .linkedin,
-    .google,
-    .twitter {
-      font-size: 30px;
-    }
+    align-items: center;
   }
 }
+// .footer-full {
+//   padding: 25px;
+//   background-color: #32cd32;
+
+//   .address {
+//     .icon-add {
+//       display: flex;
+//       align-items: center;
+//       gap: 10px;
+//       .gif {
+//         font-size: 20px;
+//         // color: red;
+//       }
+//       .cnts {
+//         .title {
+//           font-family: Montserrat;
+//           font-size: 18px;
+//           font-weight: 700;
+//           margin-bottom: 10px;
+//           color: #fff;
+//         }
+//         .cnt {
+//           font-family: Montserrat;
+//           font-size: 15px;
+//           font-weight: 400;
+//           margin-bottom: 5px;
+//           color: #fff;
+//         }
+//       }
+//     }
+//   }
+//   .ways {
+//     .phone {
+//       display: flex;
+//       align-items: center;
+//       gap: 10px;
+//       .image {
+//         font-size: 43px;
+//         color: red;
+//       }
+//     }
+//     .cont {
+//       .title {
+//         font-family: Montserrat;
+//         font-size: 18px;
+//         font-weight: 700;
+//         margin-bottom: 10px;
+//         color: #fff;
+//       }
+//       .one,
+//       .two {
+//         font-family: Montserrat;
+//         font-size: 15px;
+//         font-weight: 400;
+//         margin-bottom: 15px;
+//         color: #fff;
+//         a {
+//           text-decoration: none;
+//           color: #fff;
+//         }
+//       }
+//     }
+//   }
+//   .mail {
+//     .mail-cnt {
+//       display: flex;
+//       gap: 10px;
+//       align-items: center;
+//     }
+//     .image {
+//       font-size: 45px;
+//       color: red;
+//     }
+//     .cnt {
+//       .title {
+//         font-family: Montserrat;
+//         font-size: 18px;
+//         font-weight: 700;
+//         margin-bottom: 10px;
+//         color: #fff;
+//       }
+//       .to,
+//       .to-to {
+//         margin-bottom: 10px;
+//         a {
+//           font-family: Montserrat;
+//           color: #fff;
+//           text-decoration: none;
+//         }
+//       }
+//     }
+//   }
+//   .social {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     gap: 15px;
+//     .fb,
+//     .insta,
+//     .linkedin,
+//     .google,
+//     .twitter {
+//       font-size: 30px;
+//     }
+//   }
+// }

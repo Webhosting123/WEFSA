@@ -1,5 +1,9 @@
 @import "../../main.scss";
 .contact-form-modal {
+  .btn-save {
+    background-color: #0fd850;
+  }
+  font-family: "Montserrat", sans-serif;
   .drop-image {
     background-image: url("./image/top-view-retro-telephone.jpg");
     background-position: center;

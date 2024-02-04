@@ -14,12 +14,12 @@ import "aos/dist/aos.css";
 export default function Overview() {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Set the duration of the animation
+      duration: 2000,
     });
   }, []);
   return (
     <section>
-      <div className="overview-full">
+      <div className="overview-full" id="overview">
         <div className="title" data-aos="fade-up">
           <h1>Overview</h1>
         </div>
@@ -87,27 +87,27 @@ export default function Overview() {
                     supply chain, organizing both ends by:
                   </div>
                   <ul>
-                    <li data-aos="fade-up">
+                    <li className="listed" data-aos="fade-up">
                       Forming farmer groups for collective and planned farming.
                     </li>
-                    <li data-aos="fade-up">
+                    <li className="listed" data-aos="fade-up">
                       Establishing a robust supply chain infrastructure.
                     </li>
-                    <li data-aos="fade-up">
+                    <li className="listed" data-aos="fade-up">
                       Organizing vendors into marketing groups.
                     </li>
-                    <li data-aos="fade-up">
+                    <li className="listed" data-aos="fade-up">
                       Linking marketing and farming groups for mutual growth.
                     </li>
-                    <li data-aos="fade-up">
+                    <li className="listed" data-aos="fade-up">
                       Advocating agricultural training for rural women, who form
                       a significant portion of agricultural laborers.
                     </li>
-                    <li data-aos="fade-up">
+                    <li className="listed" data-aos="fade-up">
                       Incorporating the latest technology in agriculture and its
                       supply chain. Integrated Supply Chain
                     </li>
-                    <li data-aos="fade-up">
+                    <li className="listed" data-aos="fade-up">
                       Our company ensures product integrity from source to
                       customer by establishing a totally integrated supply
                       chain. This reduces waste, extends shelf life, and lowers

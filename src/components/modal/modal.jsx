@@ -2,12 +2,7 @@ import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import "./modal.scss";
 
-function Form() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
+function Form({ show, handleClose }) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -28,16 +23,11 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here using formData
     console.log(formData);
   };
 
   return (
     <>
-      <div className="button-main" onClick={handleShow}>
-        For Enquiries
-      </div>
-
       <Modal
         show={show}
         onHide={handleClose}
@@ -46,9 +36,12 @@ function Form() {
         centered
         className="contact-form-modal"
       >
+        <Modal.Header closeButton className="headers">
+          <Modal.Title>Contact Form</Modal.Title>
+        </Modal.Header>
         <Modal.Body className="drop-image">
           <div className="form-modal">
-            <div className="title-main">Contact Form</div>
+            <div className="title-main"></div>
             <form onSubmit={handleSubmit} className="form-form">
               <div className="name">
                 <div className="title">Name</div>
@@ -133,6 +126,7 @@ function Form() {
                   onChange={handleChange}
                   rows="4"
                   cols="50"
+                  placeholder="If any thing that you want to tells"
                 ></textarea>
               </div>
               <div className="form-btn-sbt">
@@ -144,6 +138,18 @@ function Form() {
             </form>
           </div>
         </Modal.Body>
+        {/* <Modal.Footer className="footers">
+          <Button
+            variant="secondary"
+            className="btn-closed"
+            onClick={handleClose}
+          >
+            Close
+          </Button>
+          <Button variant="primary" className="btn-save" onClick={handleSubmit}>
+            Save
+          </Button>
+        </Modal.Footer> */}
       </Modal>
     </>
   );

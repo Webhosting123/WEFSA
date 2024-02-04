@@ -1,8 +1,7 @@
 import React from "react";
 import "./contact.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import speech from "./image/large-group-people-sitting-auditorium-watching-presentation-generated-by-ai.jpg";
-
+import speech from "../assets/leader.jpg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,13 +9,13 @@ import "aos/dist/aos.css";
 export default function Contact() {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // Set the duration of the animation
+      duration: 2000,
     });
   }, []);
 
   return (
     <section>
-      <div className="contact-full">
+      <div className="contact-full" id="contact">
         <h1 className="title" data-aos="fade-up">
           About Managing Director
         </h1>
